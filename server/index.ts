@@ -2,14 +2,8 @@ const express = require("express");
 import { Request, Response } from "express";
 const app = express();
 
-var cors = require("cors");
-
-app.use(cors());
-
 //Body Parser Middleware
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-
 const PORT = 5000;
 
 const data = require("../client/data.json");
