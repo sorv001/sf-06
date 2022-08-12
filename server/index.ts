@@ -2,7 +2,6 @@ const express = require("express");
 import { Request, Response } from "express";
 const app = express();
 
-//Body Parser Middleware
 app.use(express.json());
 const PORT = 5000;
 
